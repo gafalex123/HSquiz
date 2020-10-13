@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Quiz</title>
+	<script src="quizproject.js"></script>
+	<link rel="stylesheet" type="text/css" href="quizproject.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="manifest" href="manifest.json">
+	<link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="initialize()" onblur="endTest()">
+	<div id="lightbox" onclick="closeLightbox()">
+		<div id="message">This Is A Message</div>
+	</div>
+	
+	
+	
+
+	<div class="grid-container">
+	<h2 class="h2">Hearthstone Quiz</h2>
+	<p class="p" id="p">asdf</p>
+	  <div class="header">
+		<div id="question">The Question</div>
+	  </div>
+	  
+	  <div class="left">
+		 <div class="options" id="a" onclick="markIt('a')">A.</div>
+		 <div class="options" id="b" onclick="markIt('b')">B.</div>
+		 <div class="options" id="c" onclick="markIt('c')">C.</div>
+		 <div class="options" id="d" onclick="markIt('d')">D.</div>
+	  </div>
+
+	  
+	  <div class="right"> <img id="image" src="quizimages/q1.jpg" alt="javascriptImage"></div>
+	  
+	  <div class="footer1" id="next">
+			<button class="skip" id="skip" onclick="next()">
+				Skip
+			</button>
+	  </div>
+	  
+	  <div class="footer2">
+		<p id="score">Your Score Is 0/10</p>
+	  </div>
+	  
+	  <div class="timer" id="countdown"></div>
+	  <div class="add" id="add">
+		<button class="btn" id="btn" onclick="addTime()">
+			Add 10 Seconds! (Twice Per Question)
+		</button>
+	  </div>
+	  
+	  
+	</div>
+	
+</body>
+</html>
+
+
+
